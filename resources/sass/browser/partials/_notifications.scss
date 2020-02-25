@@ -1,0 +1,33 @@
+.custom-alert{
+	position: absolute;
+	top: 75px;
+  left: 30px;
+  z-index: 9999;
+  width: 460px;
+  box-shadow: 5px 5px 10px #eee;
+	background: $primary;
+	color: white;
+	font-weight: 100;
+	border-radius: 6px;
+	transition: left 2s ease, opacity 2s ease;
+	&.danger{
+		background: $danger;
+	}
+	&.success{
+		background: $primary;
+	}
+	&.hidden{
+		left: -1000px !important;
+		opacity: 0 !important;
+	}
+	.alert-description{
+		font-size: 0.92rem;
+    font-weight: 100;
+		margin: 0;
+	}
+	.action-icon-close{
+		margin-left: auto;
+		cursor: pointer;
+	}
+
+}
